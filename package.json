@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "which python",
+    "check": "sudo python test.py",
     "test": "echo \"test\""
   },
   "keywords": [
