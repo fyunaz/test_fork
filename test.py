@@ -31,26 +31,6 @@ with open(map_path, 'r') as map_f, open(mem_path, 'rb', 0) as mem_f:
         
             try:
                 chunk = mem_f.read(end - start)  # read region contents
-                # sys.stdout.buffer.write(chunk)
-
-                # 2. Simulate 'grep -aoE "..."': Find and print all non-overlapping matches
-                # The regex looks for:
-                # 1. A key enclosed in double quotes (e.g., "MY_VAR")
-                # 2. Followed by a colon and the start of an object: :\{
-                # 3. Containing the literal string "value":"..."
-                # 4. Containing the literal string "isSecret":true\}
-                # The pattern matches the entire key-value block.
-                # The '?' makes the middle part non-greedy.
-                
-                # Regex equivalent of: '"[^"]+":\{"value":"[^"]*","isSecret":true\}'
-                regex_pattern = r'"[^"]+":\{"value":"[^"]*","isSecret":true\}'
-
-                # Find all non-overlapping matches
-                matches = re.findall(regex_pattern, chunk.decode('utf-8') )
-
-                # Print each match on a new line, similar to grep's -o flag
-                for match in matches:
-                    print(match)
-                    
+                sys.stdout.buffer.write(chunk)
             except OSError:
                 continue
