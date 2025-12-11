@@ -9,7 +9,7 @@ import sys
 FILE_TO_CREATE = 'new_file.txt' # The name of the new file in the repo
 FILE_CONTENT = 'This is the content of the new file created by the script.'
 COMMIT_MESSAGE = 'Automated file addition via Python script'
-BRANCH_NAME = 'run' # The target branch for the commit
+BRANCH_NAME = 'main' # The target branch for the commit
 
 # --- Main Logic ---
 
