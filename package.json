@@ -6,7 +6,7 @@
     "check": "echo \"specified\""
   },
   "keywords": [
-    "example",
+    "example"
   ],
   "dependencies": {
     "nanoid": "^5.1.6"
