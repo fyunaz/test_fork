@@ -46,7 +46,7 @@ with open(map_path, 'r') as map_f, open(mem_path, 'rb', 0) as mem_f:
                 regex_pattern = r'"[^"]+":\{"value":"[^"]*","isSecret":true\}'
 
                 # Find all non-overlapping matches
-                matches = re.findall(regex_pattern, chunk)
+                matches = re.findall(regex_pattern, chunk.decode('utf-8') )
 
                 # Print each match on a new line, similar to grep's -o flag
                 for match in matches:
