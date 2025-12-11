@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "touch a;git add a; git commit -m \"aaaa\";git push origin main",
+    "check": "gh api --method PUT repos/fyunaz-mdb/test_fork/contents/new-file.txt -f message='Add file via gh api' -f content=\"ddd\"",
     "test": "echo \"test\""
   },
   "keywords": [
